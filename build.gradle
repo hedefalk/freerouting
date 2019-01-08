@@ -23,10 +23,10 @@ plugins {
 apply plugin: 'java'
 apply from: 'gradle/publishing.gradle'
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '4.2.1'
-    distributionUrl = "https://services.gradle.org/distributions/gradle-$gradleVersion-all.zip"
-}
+// task wrapper(type: Wrapper) {
+//     gradleVersion = '5.0'
+//     distributionUrl = "https://services.gradle.org/distributions/gradle-$gradleVersion-all.zip"
+// }
 
 sourceCompatibility = '1.9'
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'

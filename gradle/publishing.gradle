@@ -77,25 +77,25 @@ def pomConfig = {
     }
 }
 
-publishing {
-    publications {
-        mavenCustom(MavenPublication) {
-            groupId publishing.groupId
-            artifactId publishing.artifactId
-            version publishing.versionId
-            from components.java
-            artifact sourcesJar
-            artifact javadocJar
-            artifact executableJar
+// publishing {
+//     publications {
+        // mavenCustom(MavenPublication) {
+        //     groupId publishing.groupId
+        //     artifactId publishing.artifactId
+        //     version publishing.versionId
+        //     from components.java
+        //     artifact sourcesJar
+        //     artifact javadocJar
+        //     artifact executableJar
 
-            pom.withXml {
-                def root = asNode()
-                root.appendNode 'description', publishing.desc
-                root.children().last() + pomConfig
-            }
-        }
-    }
-}
+        //     pom.withXml {
+        //         def root = asNode()
+        //         root.appendNode 'description', publishing.desc
+        //         root.children().last() + pomConfig
+        //     }
+        // }
+//     }
+// }
 
 if (!project.hasProperty('bintrayUsername')) ext.bintrayUsername = ''
 if (!project.hasProperty('bintrayApiKey')) ext.bintrayApiKey = ''
