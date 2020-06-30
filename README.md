@@ -1,3 +1,7 @@
+# This repository has been archived!
+
+Active development is continued here: https://github.com/freerouting/freerouting
+
 # freerouting
 
 [ ![Download](https://api.bintray.com/packages/miho/Freerouting/freerouting/images/download.svg) ](https://bintray.com/miho/Freerouting/freerouting/_latestVersion)
